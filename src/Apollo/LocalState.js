@@ -1,6 +1,6 @@
-export const defaults={
-    isLoggedIn: localStorage.getItem("token")!==null?true:false
-};
+export const defaults = {
+    isLoggedIn: Boolean(localStorage.getItem("token")) || false
+  };
 
 export const resolvers={
     Mutation:{
