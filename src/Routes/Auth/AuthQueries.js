@@ -19,5 +19,6 @@ export const CREATE_ACCOUNT = gql`
       firstName: $firstName
       lastName: $lastName
     )
+
   }
 `;
