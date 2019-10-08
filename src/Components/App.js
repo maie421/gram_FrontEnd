@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { HashRouter as Router } from "react-router-dom";
 import GlobalStyles from "../Styles/GlobalStyles";
 import Theme from "../Styles/Theme";
-import Routes from "./Router";
+import Routes from "./Routes";
 import Header from "./Header";
 import Footer from "./Footer";
 

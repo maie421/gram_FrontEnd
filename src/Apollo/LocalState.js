@@ -4,8 +4,8 @@ export const defaults = {
 
 export const resolvers={
     Mutation:{
-        logUserIn:(_,{toKen},{cache})=>{
-            localStorage.setItem("toKen",toKen);
+        logUserIn:(_,{token},{cache})=>{
+            localStorage.setItem("token",token);
             cache.writeData({
                 data:{
                     isLoggedIn:true
@@ -14,7 +14,7 @@ export const resolvers={
             return null;
         },
         logUserOut:(_,__,{cache})=>{
-            localStorage.removeItem("toKen");
+            localStorage.removeItem("token");
             window.location.reload();
             return null;
         }
